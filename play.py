@@ -39,8 +39,8 @@ def loadGame():
     return (playerList, itemList, locationList)
 
 
-def turn(activePlayer,playerList,screen,itemList,locationList):
-    updateMap(activePlayer,screen)
+def turn(activePlayer,playerList,itemList,locationList):
+
 
     if(activePlayer.money > 500):
         activePlayer.winner()
@@ -170,31 +170,18 @@ def main ():
     play(playerList,itemList,locationList)
 
 def play(playerList,itemList,locationList):
-    screen = map() #  create the map object
+    
     activePlayerIndex = 0
     while True:
         print "It's your turn  "+playerList[activePlayerIndex].name+". You are at " + playerList[activePlayerIndex].location.name
         print playerList[activePlayerIndex].location.description
 
-        turn(playerList[activePlayerIndex],playerList,screen,itemList,locationList)
+        turn(playerList[activePlayerIndex],playerList,itemList,locationList)
 
         activePlayerIndex = activePlayerIndex+1
         if(activePlayerIndex == len(playerList)):
             activePlayerIndex = 0
 
-def updateMap(activePlayer,screen):
-    placeOnmap = activePlayer.location.cords
-    screen.fill(0)
-    chart = pygame.image.load("map.jpg")
-    screen.blit(chart,(0,0))
-    pygame.draw.circle(screen, (56,127,255), (placeOnmap), 6, 0)
-    font = pygame.font.Font(None, 40)
-    disp = activePlayer.name
-    text = font.render(disp, 1, (230, 10, 10))
-    textpos = placeOnmap
-        #textpos = text.get_rect()
-        #textpos.centerx = screen.get_rect().centerx
-    screen.blit(text, textpos)
-    pygame.display.flip()
+
 
 main() # start the game

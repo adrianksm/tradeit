@@ -5,14 +5,8 @@
 
 from random import randint, choice
 from classes import *
-import pygame
 
 
-def map():
-    pygame.init()
-    width, height = 800,600
-    screen = pygame.display.set_mode((width, height))
-    return screen
 
 def numPlayers():
     while True:
