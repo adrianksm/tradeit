@@ -12,7 +12,7 @@ sudo apt-get install git
 ```
 
 
-We are going to use a python Virtual environment.
+We are going to use a python virtual environment.
 ```
 sudo apt-get install python-virtualenv
 ```
@@ -28,7 +28,7 @@ cd /home/adrian/tradeitEnv
 virtualenv .  <-- note the dot is important!
 ```
 
-This will create some directories and copy the important python files and place them withing your virtual environment. you can check this with a simple directory listing:
+This will create some directories and copy the important python files and place them withing your virtual environment. You can check this with a simple directory listing:
 
 ```
 ls -la
@@ -71,7 +71,7 @@ cd tradeit
 python play.py
 ```
 
-To leave the virtualenvironment after you finish working on the code:
+To leave the virtual environment after you finish working on the code:
 
 ```
 deactivate
