@@ -5,7 +5,7 @@ A simple, multiplayer game based on the ideas of 'Up for Grabs!' on the Spectrum
 =======
 
 TO install on Ubuntu
-Forst you must have git installed:
+First you must have git installed:
 
 ```
 sudo apt-get install git
