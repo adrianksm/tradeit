@@ -1,10 +1,10 @@
-tradeit
+TradeIt
 =======
 
 A simple, multiplayer game based on the ideas of 'Up for Grabs!' on the Spectrum
-=======
 
-TO install on Ubuntu
+
+To install on Ubuntu
 First you must have git installed:
 
 ```
@@ -17,7 +17,7 @@ We are going to use a python Virtual environment.
 sudo apt-get install python-virtualenv
 ```
 Now, create a new directory that will hold your 'virtualenv'
-e.g:
+e.g, this is mine:
 ```
 mkdir /home/adrian/tradeitENV
 ```
@@ -55,6 +55,7 @@ touch tradeit/.gitignore  <-- don't miss the dot!
 ```
 
 add *.pyc to the .gitignore file using your text editor
+
 Check it like this: (This is so you don't add loads of python compile files to the repo when you 'git push')
 
 ```
