@@ -46,4 +46,19 @@ drwxrwxr-x 2 adrian adrian 4096 Nov 17 09:25 local
 Now, clone the repository
 ```
 git clone https://github.com/adrianksm/tradeit.git
-'''
+```
+
+Create a .gitignore file
+
+```
+touch tradeit/.gitignore  <-- don't miss the dot!
+```
+
+add *.pyc to the .gitignore file using your text editor
+Check it like this:
+```
+(tradeitENV)adrian@adrian-Vbox:~/tradeitENV$ cat tradeit/.gitignore 
+*.pyc
+
+```
+
