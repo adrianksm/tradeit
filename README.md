@@ -55,7 +55,8 @@ touch tradeit/.gitignore  <-- don't miss the dot!
 ```
 
 add *.pyc to the .gitignore file using your text editor
-Check it like this:
+Check it like this: (This is so you don't add loads of python compile files to the repo when you 'git push')
+
 ```
 (tradeitENV)adrian@adrian-Vbox:~/tradeitENV$ cat tradeit/.gitignore 
 *.pyc
