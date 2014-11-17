@@ -5,6 +5,12 @@ A simple, multiplayer game based on the ideas of 'Up for Grabs!' on the Spectrum
 =======
 
 TO install on Ubuntu
+Forst you must have git installed:
+
+```
+sudo apt-get install git
+```
+
 
 We are going to use a python Virtual environment.
 ```
@@ -23,7 +29,7 @@ virtualenv .  <-- note the dot is important!
 ```
 
 This will create some directories and copy the important python files and place them withing your virtual environment. you can check this with a simple directory listing:
-'''
+
 ```
 ls -la
 adrian@adrian-Vbox:~/tradeitENV$ ls -la
