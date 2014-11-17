@@ -63,3 +63,10 @@ Check it like this: (This is so you don't add loads of python compile files to t
 
 ```
 
+Now run the game:
+
+```
+cd tradeit
+python play.py
+```
+
