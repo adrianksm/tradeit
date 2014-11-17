@@ -70,3 +70,17 @@ cd tradeit
 python play.py
 ```
 
+To leave the virtualenvironment after you finish working on the code:
+
+```
+deactivate
+```
+
+To re-active it when you want to work on the code some more:
+```
+cd /home/adrian/tradeitEnv  (use YOUR env directory)
+source bin/activate
+cd tradeit
+git pull (gets the latest changes from the repo, if there are any.)
+```
+
