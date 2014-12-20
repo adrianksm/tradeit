@@ -123,11 +123,13 @@ def main ():
     print 'Do you want to load a game? y/n'
     a = raw_input('>  ')
     if 'y' in a:
-        playerList, itemList, locationList = loadGame()
-        #print playerList[0].name
+        try:
+            playerList, itemList, locationList = loadGame()
+            #print playerList[0].name
+            play(playerList,itemList,locationList)
+        except IOError:
 
-        play(playerList,itemList,locationList)
-
+            print "Error finding save game file, starting new game.\n"
     elif 'n' in a:
         print 'Ok, lets start a new game'
 
@@ -170,7 +172,7 @@ def main ():
     play(playerList,itemList,locationList)
 
 def play(playerList,itemList,locationList):
-    
+
     activePlayerIndex = 0
     while True:
         print "It's your turn  "+playerList[activePlayerIndex].name+". You are at " + playerList[activePlayerIndex].location.name
